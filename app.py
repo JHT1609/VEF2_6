@@ -28,4 +28,4 @@ def order():
     ananas = request.query.ananas
     return template('order', fullname=fullname, pizzasize=pizzasize, skinka=skinka, pepperoni=pepperoni, ananas=ananas)
 
-run()
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
