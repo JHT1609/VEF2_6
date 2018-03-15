@@ -1,4 +1,5 @@
 from bottle import run, route, template, static_file, error, request
+import os
 
 @route('/')
 def index():
